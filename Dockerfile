@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 
 # Install dependencies
 RUN apt-get update -y
-RUN apt-get install -y apache2 php5 libapache2-mod-php5 php5-mcrypt php5-mysql php5-gd php5-intl 
+RUN apt-get install -y apache2 php5 libapache2-mod-php5 php5-mcrypt php5-mysql php5-gd php5-intl php5-curl 
 
 # Prepare app folder
 RUN rm -rf /var/www/*
